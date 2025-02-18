@@ -1,7 +1,7 @@
 services:
   - type: web
     name: weather-app-backend
-    env: node
+    runtime: node
     buildCommand: npm install
     startCommand: node index.js
     envVars:
