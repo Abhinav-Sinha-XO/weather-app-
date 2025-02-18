@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
-import SearchBar from './components/SearchBar';
+import Searchbar from './components/Searchbar'
 import WeatherDisplay from './components/WeatherDisplay';
 import Forecast from './components/Forecast';
 import History from './components/History';
@@ -51,7 +51,7 @@ function App() {
     <div className='bg-blue-300 min-h-screen w-full'>
       <div >
       <h1 className='flex justify-center text-7xl p-5 font-extrabold text-amber-200 font-mono '>Weather Dashboard</h1>
-      <SearchBar onSearch={handleSearch} />
+      <Searchbar onSearch={handleSearch} />
 
       {weatherData && (
         <WeatherDisplay data={weatherData}></WeatherDisplay>

@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 
-const SearchBar = ({onSearch})=>{
-  const[inputValue,setInputValue] = useState('');
+const Searchbar = ({ onSearch }) => {
+  const [inputValue, setInputValue] = useState('');
 
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if(inputValue.trim()){
-      onSearch(inputValue.trim())
-      setInputValue('')
+    if(inputValue.trim()) {
+      onSearch(inputValue.trim());
+      setInputValue('');
     }
   }
 
@@ -33,4 +33,4 @@ const SearchBar = ({onSearch})=>{
   )
 }
 
-export default SearchBar;
+export default Searchbar;
