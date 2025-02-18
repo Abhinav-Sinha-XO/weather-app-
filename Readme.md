@@ -1,7 +1,14 @@
 # Weather App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fe380bc4-0d00-4118-a7d1-290fbd1530cd/deploy-status)](https://app.netlify.com/sites/weather-app-xo/deploys)
+
 ## Description
 A simple weather application that provides current weather information and forecasts.
+
+## Live Demo
+
+- Frontend: [https://weather-app-xo.netlify.app](https://weather-app-xo.netlify.app)
+- API: [https://weather-app-pbhk.onrender.com](https://weather-app-pbhk.onrender.com)
 
 ## Features
 - Real-time weather data
