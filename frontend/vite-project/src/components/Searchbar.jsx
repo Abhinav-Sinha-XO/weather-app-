@@ -7,6 +7,12 @@ const Searchbar = ({ onSearch }) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    const capitalizedValue = capitalizeFirstLetter(value);
+    setInputValue(capitalizedValue);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if(inputValue.trim()) {
@@ -22,7 +28,7 @@ const Searchbar = ({ onSearch }) => {
         <input
           type="text"
           value={inputValue}
-          onChange={(e)=>setInputValue(e.target.value)}
+          onChange={handleInputChange}
           placeholder="Enter city name..."
           className='flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 border border-gray-200'
         />
