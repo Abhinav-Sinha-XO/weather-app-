@@ -3,10 +3,15 @@ import React, {useState} from 'react';
 const Searchbar = ({ onSearch }) => {
   const [inputValue, setInputValue] = useState('');
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if(inputValue.trim()) {
-      onSearch(inputValue.trim());
+      const capitalizedInput = capitalizeFirstLetter(inputValue.trim());
+      onSearch(capitalizedInput);
       setInputValue('');
     }
   }
