@@ -9,8 +9,9 @@ console.log('MONGODB_URI:', process.env.MONGODB_URI);
 
 // CORS middleware must be first
 app.use(cors({
-  origin: process.env.FRONTEND_URL ,
-  credentials: true
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  'Access-Control-Allow-Origin': '*'
 }));
 
 // Body parser middleware
