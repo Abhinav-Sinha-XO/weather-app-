@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
+console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
+console.log('MONGODB_URI:', process.env.MONGODB_URI);
 
 // CORS middleware must be first
 app.use(cors({
