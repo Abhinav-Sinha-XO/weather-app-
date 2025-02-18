@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const History = ({ items = [], onSelect = () => {} }) => {
+const History = ({ items, onSelect }) => {
   
   const formatTimeStamp = (timeStamp) => {
     const options = {
